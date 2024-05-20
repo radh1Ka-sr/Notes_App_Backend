@@ -116,8 +116,7 @@ const User = mongoose.model('User',userSchema);
 const Notes = mongoose.model('Notes',noteSchema);
 
 //Connect to mongoDb
-mongoose.connect('mongodb+srv://radhikasinghrajawat2:Radhika2003@cluster0.qdafjto.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
-
+mongoose.connect();
 //Register User
 app.post('/user/signup', async (req,res)=>{
     const {username , password} = req.body;
